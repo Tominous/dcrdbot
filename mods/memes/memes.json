@@ -40,6 +40,7 @@
             "url": "https://i.imgflip.com/1bh8.jpg"
         },
         {
+            "trigger": "!everywhere",
             "id": "347390",
             "name": "X, X Everywhere",
             "url": "https://i.imgflip.com/7g1q.jpg"
@@ -86,6 +87,7 @@
             "url": "https://i.imgflip.com/7zq97.jpg"
         },
         {
+            "trigger": "!brian",
             "id": "61585",
             "name": "Bad Luck Brian",
             "url": "https://i.imgflip.com/1bip.jpg"

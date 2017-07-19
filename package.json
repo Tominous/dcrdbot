@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/nodemon",
+    "start": "node index.js",
+    "start:live": "./node_modules/.bin/nodemon",
     "new-mod": "node tools/create-mod.js",
     "create-mod": "node tools/create-mod.js"
   },
