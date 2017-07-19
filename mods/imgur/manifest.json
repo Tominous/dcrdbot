@@ -1,0 +1,11 @@
+{
+    "name": "Random Imgur",
+    "brief": "Fetches a random image from imgur main page and posts it.",
+    "version": "0.0.1",
+    "main": "index.js",
+    "config": "config.json",
+    "configSchema": "config.spec.json",
+    "triggers": [
+        "!imgur"
+    ]
+}

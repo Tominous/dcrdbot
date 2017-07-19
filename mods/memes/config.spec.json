@@ -1,0 +1,24 @@
+{
+    "type": "object",
+    "properties": {
+        "imgflip": {
+            "type": "object",
+            "properties": {
+                "username": {
+                    "type": [
+                        "string",
+                        "boolean"
+                    ],
+                    "required": true
+                },
+                "password": {
+                    "type": [
+                        "string",
+                        "boolean"
+                    ],
+                    "required": true
+                }
+            }
+        }
+    }
+}

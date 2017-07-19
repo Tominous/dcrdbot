@@ -3,6 +3,12 @@
         "token": false
     },
     "ignores": {
-        "mods": []
+        "mods": [
+            "dayum",
+            "dont-shout",
+            "imgur",
+            "indeed",
+            "memes"
+        ]
     }
 }

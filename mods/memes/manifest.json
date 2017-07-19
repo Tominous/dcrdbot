@@ -1,0 +1,11 @@
+{
+    "name": "Meme Builder",
+    "brief": "Uses imgflip.com to create memes on the fly.",
+    "version": "0.0.1",
+    "main": "index.js",
+    "config": "config.json",
+    "configSchema": "config.spec.json",
+    "triggers": [
+        "!memes"
+    ]
+}

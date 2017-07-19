@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": {
+        "imgurClientId": {
+            "type": "object",
+            "type": [
+                "string",
+                "boolean"
+            ],
+            "required": true
+        }
+    }
+}

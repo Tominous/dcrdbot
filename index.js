@@ -12,7 +12,7 @@ const mongoose = require('mongoose');
 //    console.log(`${err.name}: ${err.message}`);
 //});
 
-if (env.bot && env.bot.token && manifest.mods) {
+if (env.bot && env.bot.token && manifest.mods && Object.keys(manifest.mods).length > 0) {
     const bot = new Discord.Client({
         token: env.bot.token,
         autorun: true
@@ -28,7 +28,7 @@ if (env.bot && env.bot.token && manifest.mods) {
     require('./includes/init-mods')(piecesParams);
     require('./includes/triggers')(piecesParams);
 } else {
-    if (!manifest.mods) {
+    if (!manifest.mods || Object.keys(manifest.mods).length < 1) {
         console.error('It seems your bot has no mods.');
     } else {
         console.error('You need to configure a Discord bot token.');

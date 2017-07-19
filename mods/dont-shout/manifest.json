@@ -1,0 +1,6 @@
+{
+    "name": "STAHP!",
+    "brief": "Shouting detector.",
+    "version": "0.0.1",
+    "main": "stahp.js"
+}

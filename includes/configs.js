@@ -52,6 +52,12 @@ class ConfigsManager {
         let error = false;
         for (let k in dirNames) {
             const name = dirNames[k];
+            //
+            // Ignoring mods.
+            if (env.ignores.mods.indexOf(name) >= 0) {
+                continue;
+            }
+
             const manifestPath = path.join(modsDir, name, 'manifest.json');
             if (fs.existsSync(manifestPath)) {
                 const manifest = require(manifestPath);

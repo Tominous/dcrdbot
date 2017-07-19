@@ -1,0 +1,511 @@
+{
+    "memes": [
+        {
+            "trigger": "!boromir",
+            "id": "61579",
+            "name": "One Does Not Simply",
+            "url": "https://i.imgflip.com/1bij.jpg"
+        },
+        {
+            "trigger": "!batslap",
+            "id": "438680",
+            "name": "Batman Slapping Robin",
+            "url": "https://i.imgflip.com/9ehk.jpg"
+        },
+        {
+            "id": "101470",
+            "name": "Ancient Aliens",
+            "url": "https://i.imgflip.com/26am.jpg"
+        },
+        {
+            "trigger": "!fry",
+            "id": "61520",
+            "name": "Futurama Fry",
+            "url": "https://i.imgflip.com/1bgw.jpg"
+        },
+        {
+            "id": "4087833",
+            "name": "Waiting Skeleton",
+            "url": "https://i.imgflip.com/2fm6x.jpg"
+        },
+        {
+            "trigger": "!braceyourselves",
+            "id": "61546",
+            "name": "Brace Yourselves X is Coming",
+            "url": "https://i.imgflip.com/1bhm.jpg"
+        },
+        {
+            "id": "61532",
+            "name": "The Most Interesting Man In The World",
+            "url": "https://i.imgflip.com/1bh8.jpg"
+        },
+        {
+            "id": "347390",
+            "name": "X, X Everywhere",
+            "url": "https://i.imgflip.com/7g1q.jpg"
+        },
+        {
+            "id": "5496396",
+            "name": "Leonardo Dicaprio Cheers",
+            "url": "https://i.imgflip.com/39t1o.jpg"
+        },
+        {
+            "id": "61539",
+            "name": "First World Problems",
+            "url": "https://i.imgflip.com/1bhf.jpg"
+        },
+        {
+            "id": "28251713",
+            "name": "Oprah You Get A",
+            "url": "https://i.imgflip.com/gtj5t.jpg"
+        },
+        {
+            "id": "1035805",
+            "name": "Boardroom Meeting Suggestion",
+            "url": "https://i.imgflip.com/m78d.jpg"
+        },
+        {
+            "trigger": "!yuno",
+            "id": "61527",
+            "name": "Y U No",
+            "url": "https://i.imgflip.com/1bh3.jpg"
+        },
+        {
+            "id": "563423",
+            "name": "That Would Be Great",
+            "url": "https://i.imgflip.com/c2qn.jpg"
+        },
+        {
+            "id": "8072285",
+            "name": "Doge",
+            "url": "https://i.imgflip.com/4t0m5.jpg"
+        },
+        {
+            "id": "13424299",
+            "name": "Yall Got Any More Of",
+            "url": "https://i.imgflip.com/7zq97.jpg"
+        },
+        {
+            "id": "61585",
+            "name": "Bad Luck Brian",
+            "url": "https://i.imgflip.com/1bip.jpg"
+        },
+        {
+            "id": "61582",
+            "name": "Creepy Condescending Wonka",
+            "url": "https://i.imgflip.com/1bim.jpg"
+        },
+        {
+            "id": "61533",
+            "name": "X All The Y",
+            "url": "https://i.imgflip.com/1bh9.jpg"
+        },
+        {
+            "id": "1509839",
+            "name": "Captain Picard Facepalm",
+            "url": "https://i.imgflip.com/wczz.jpg"
+        },
+        {
+            "id": "61544",
+            "name": "Success Kid",
+            "url": "https://i.imgflip.com/1bhk.jpg"
+        },
+        {
+            "id": "101288",
+            "name": "Third World Skeptical Kid",
+            "url": "https://i.imgflip.com/265k.jpg"
+        },
+        {
+            "id": "16464531",
+            "name": "But Thats None Of My Business",
+            "url": "https://i.imgflip.com/9sw43.jpg"
+        },
+        {
+            "id": "100947",
+            "name": "Matrix Morpheus",
+            "url": "https://i.imgflip.com/25w3.jpg"
+        },
+        {
+            "id": "405658",
+            "name": "Grumpy Cat",
+            "url": "https://i.imgflip.com/8p0a.jpg"
+        },
+        {
+            "id": "40945639",
+            "name": "Dr Evil Laser",
+            "url": "https://i.imgflip.com/odluv.jpg"
+        },
+        {
+            "id": "14371066",
+            "name": "Star Wars Yoda",
+            "url": "https://i.imgflip.com/8k0sa.jpg"
+        },
+        {
+            "id": "21735",
+            "name": "The Rock Driving",
+            "url": "https://i.imgflip.com/grr.jpg"
+        },
+        {
+            "id": "61516",
+            "name": "Philosoraptor",
+            "url": "https://i.imgflip.com/1bgs.jpg"
+        },
+        {
+            "id": "14230520",
+            "name": "Black Girl Wat",
+            "url": "https://i.imgflip.com/8h0c8.jpg"
+        },
+        {
+            "id": "6235864",
+            "name": "Finding Neverland",
+            "url": "https://i.imgflip.com/3pnmg.jpg"
+        },
+        {
+            "id": "61556",
+            "name": "Grandma Finds The Internet",
+            "url": "https://i.imgflip.com/1bhw.jpg"
+        },
+        {
+            "id": "97984",
+            "name": "Disaster Girl",
+            "url": "https://i.imgflip.com/23ls.jpg"
+        },
+        {
+            "id": "9440985",
+            "name": "Face You Make Robert Downey Jr",
+            "url": "https://i.imgflip.com/5mcpl.jpg"
+        },
+        {
+            "id": "245898",
+            "name": "Picard Wtf",
+            "url": "https://i.imgflip.com/59qi.jpg"
+        },
+        {
+            "id": "235589",
+            "name": "Evil Toddler",
+            "url": "https://i.imgflip.com/51s5.jpg"
+        },
+        {
+            "id": "101440",
+            "name": "10 Guy",
+            "url": "https://i.imgflip.com/269s.jpg"
+        },
+        {
+            "id": "101287",
+            "name": "Third World Success Kid",
+            "url": "https://i.imgflip.com/265j.jpg"
+        },
+        {
+            "id": "101511",
+            "name": "Dont You Squidward",
+            "url": "https://i.imgflip.com/26br.jpg"
+        },
+        {
+            "id": "259680",
+            "name": "Am I The Only One Around Here",
+            "url": "https://i.imgflip.com/5kdc.jpg"
+        },
+        {
+            "id": "61580",
+            "name": "Too Damn High",
+            "url": "https://i.imgflip.com/1bik.jpg"
+        },
+        {
+            "id": "101716",
+            "name": "Yo Dawg Heard You",
+            "url": "https://i.imgflip.com/26hg.jpg"
+        },
+        {
+            "id": "195389",
+            "name": "Sparta Leonidas",
+            "url": "https://i.imgflip.com/46rh.jpg"
+        },
+        {
+            "id": "444501",
+            "name": "Maury Lie Detector",
+            "url": "https://i.imgflip.com/9iz9.jpg"
+        },
+        {
+            "id": "13757816",
+            "name": "Awkward Moment Sealion",
+            "url": "https://i.imgflip.com/86vlk.jpg"
+        },
+        {
+            "id": "922147",
+            "name": "Laughing Men In Suits",
+            "url": "https://i.imgflip.com/jrj7.jpg"
+        },
+        {
+            "id": "21604248",
+            "name": "Mugatu So Hot Right Now",
+            "url": "https://i.imgflip.com/cv1y0.jpg"
+        },
+        {
+            "id": "124212",
+            "name": "Say That Again I Dare You",
+            "url": "https://i.imgflip.com/2nuc.jpg"
+        },
+        {
+            "id": "766986",
+            "name": "Aaaaand Its Gone",
+            "url": "https://i.imgflip.com/gft6.jpg"
+        },
+        {
+            "id": "101711",
+            "name": "Skeptical Baby",
+            "url": "https://i.imgflip.com/26hb.jpg"
+        },
+        {
+            "id": "109765",
+            "name": "Ill Just Wait Here",
+            "url": "https://i.imgflip.com/2cp1.jpg"
+        },
+        {
+            "id": "61583",
+            "name": "Conspiracy Keanu",
+            "url": "https://i.imgflip.com/1bin.jpg"
+        },
+        {
+            "id": "442575",
+            "name": "Aint Nobody Got Time For That",
+            "url": "https://i.imgflip.com/9hhr.jpg"
+        },
+        {
+            "id": "100955",
+            "name": "Confession Bear",
+            "url": "https://i.imgflip.com/25wb.jpg"
+        },
+        {
+            "id": "61581",
+            "name": "Put It Somewhere Else Patrick",
+            "url": "https://i.imgflip.com/1bil.jpg"
+        },
+        {
+            "id": "718432",
+            "name": "Back In My Day",
+            "url": "https://i.imgflip.com/fecg.jpg"
+        },
+        {
+            "id": "56225174",
+            "name": "Be Like Bill",
+            "url": "https://i.imgflip.com/xh3me.jpg"
+        },
+        {
+            "id": "12403754",
+            "name": "Bad Pun Dog",
+            "url": "https://i.imgflip.com/7dusq.jpg"
+        },
+        {
+            "id": "10628640",
+            "name": "Archer",
+            "url": "https://i.imgflip.com/6bt40.jpg"
+        },
+        {
+            "id": "143601",
+            "name": "Steve Harvey",
+            "url": "https://i.imgflip.com/32sx.jpg"
+        },
+        {
+            "id": "61584",
+            "name": "Socially Awesome Awkward Penguin",
+            "url": "https://i.imgflip.com/1bio.jpg"
+        },
+        {
+            "id": "89655",
+            "name": "Uncle Sam",
+            "url": "https://i.imgflip.com/1x6f.jpg"
+        },
+        {
+            "id": "3218037",
+            "name": "This Is Where I'd Put My Trophy If I Had One",
+            "url": "https://i.imgflip.com/1wz1x.jpg"
+        },
+        {
+            "id": "163573",
+            "name": "Imagination Spongebob",
+            "url": "https://i.imgflip.com/3i7p.jpg"
+        },
+        {
+            "id": "17699",
+            "name": "Buddy Christ",
+            "url": "https://i.imgflip.com/dnn.jpg"
+        },
+        {
+            "id": "68690826",
+            "name": "Spongegar",
+            "url": "https://i.imgflip.com/14wa6i.jpg"
+        },
+        {
+            "id": "29617627",
+            "name": "Look At Me",
+            "url": "https://i.imgflip.com/hmt3v.jpg"
+        },
+        {
+            "id": "1232104",
+            "name": "Pepperidge Farm Remembers",
+            "url": "https://i.imgflip.com/qep4.jpg"
+        },
+        {
+            "id": "228024",
+            "name": "Liam Neeson Taken",
+            "url": "https://i.imgflip.com/4vy0.jpg"
+        },
+        {
+            "id": "1790995",
+            "name": "And everybody loses their minds",
+            "url": "https://i.imgflip.com/12dxv.jpg"
+        },
+        {
+            "id": "27813981",
+            "name": "Hide the Pain Harold",
+            "url": "https://i.imgflip.com/gk5el.jpg"
+        },
+        {
+            "id": "6531067",
+            "name": "See Nobody Cares",
+            "url": "https://i.imgflip.com/3vzej.jpg"
+        },
+        {
+            "id": "61522",
+            "name": "Scumbag Steve",
+            "url": "https://i.imgflip.com/1bgy.jpg"
+        },
+        {
+            "id": "74191766",
+            "name": "Arthur Fist",
+            "url": "https://i.imgflip.com/1866qe.jpg"
+        },
+        {
+            "id": "28034788",
+            "name": "Marvel Civil War 1",
+            "url": "https://i.imgflip.com/govs4.jpg"
+        },
+        {
+            "id": "176908",
+            "name": "Shut Up And Take My Money Fry",
+            "url": "https://i.imgflip.com/3si4.jpg"
+        },
+        {
+            "id": "1367068",
+            "name": "I Should Buy A Boat Cat",
+            "url": "https://i.imgflip.com/tau4.jpg"
+        },
+        {
+            "id": "412211",
+            "name": "Jackie Chan WTF",
+            "url": "https://i.imgflip.com/8u2b.jpg"
+        },
+        {
+            "id": "47235368",
+            "name": "Good Fellas Hilarious",
+            "url": "https://i.imgflip.com/s4f1k.jpg"
+        },
+        {
+            "id": "1366993",
+            "name": "Spiderman Computer Desk",
+            "url": "https://i.imgflip.com/tas1.jpg"
+        },
+        {
+            "id": "59250",
+            "name": "Bender",
+            "url": "https://i.imgflip.com/19pu.jpg"
+        },
+        {
+            "id": "10364354",
+            "name": "Its Not Going To Happen",
+            "url": "https://i.imgflip.com/6656q.jpg"
+        },
+        {
+            "id": "101462",
+            "name": "Ermahgerd Berks",
+            "url": "https://i.imgflip.com/26ae.jpg"
+        },
+        {
+            "id": "356615",
+            "name": "Peter Griffin News",
+            "url": "https://i.imgflip.com/7n5z.jpg"
+        },
+        {
+            "id": "1202623",
+            "name": "Keep Calm And Carry On Red",
+            "url": "https://i.imgflip.com/pry7.jpg"
+        },
+        {
+            "id": "1570716",
+            "name": "Mr T Pity The Fool",
+            "url": "https://i.imgflip.com/xnz0.jpg"
+        },
+        {
+            "id": "29562797",
+            "name": "I'm The Captain Now",
+            "url": "https://i.imgflip.com/hlmst.jpg"
+        },
+        {
+            "id": "681831",
+            "name": "Gollum",
+            "url": "https://i.imgflip.com/em3r.jpg"
+        },
+        {
+            "id": "265789",
+            "name": "Kevin Hart The Hell",
+            "url": "https://i.imgflip.com/5p31.jpg"
+        },
+        {
+            "id": "389834",
+            "name": "Ryan Gosling",
+            "url": "https://i.imgflip.com/8csq.jpg"
+        },
+        {
+            "id": "100952",
+            "name": "Overly Attached Girlfriend",
+            "url": "https://i.imgflip.com/25w8.jpg"
+        },
+        {
+            "id": "36061805",
+            "name": "Dave Chappelle",
+            "url": "https://i.imgflip.com/lgxgt.jpg"
+        },
+        {
+            "id": "8279814",
+            "name": "Cute Cat",
+            "url": "https://i.imgflip.com/4xgqu.jpg"
+        },
+        {
+            "id": "107773",
+            "name": "Spiderman Peter Parker",
+            "url": "https://i.imgflip.com/2b5p.jpg"
+        },
+        {
+            "id": "27920",
+            "name": "Surprised Koala",
+            "url": "https://i.imgflip.com/ljk.jpg"
+        },
+        {
+            "id": "172314",
+            "name": "Kill Yourself Guy",
+            "url": "https://i.imgflip.com/3oyi.jpg"
+        },
+        {
+            "id": "460541",
+            "name": "Jack Sparrow Being Chased",
+            "url": "https://i.imgflip.com/9vct.jpg"
+        },
+        {
+            "id": "371382",
+            "name": "Simba Shadowy Place",
+            "url": "https://i.imgflip.com/7yk6.jpg"
+        },
+        {
+            "trigger": "!wolfws",
+            "id": "17496002",
+            "name": "Leonardo Dicaprio Wolf Of Wall Street",
+            "url": "https://i.imgflip.com/af002.jpg"
+        },
+        {
+            "trigger": "!lukeno",
+            "id": "19194965",
+            "name": "Star Wars No",
+            "url": "https://i.imgflip.com/bfexh.jpg"
+        }
+    ]
+}
