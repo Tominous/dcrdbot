@@ -2,7 +2,7 @@
 
 module.exports = ({ bot, env, manifest }) => {
     bot.on('message', (user, userID, channelID, message, event) => {
-        if (message.match(/^!triggers$/)) {
+        if (bot.id !== userID && message.match(/^!triggers$/)) {
             let message = '```\n';
 
             message += `Mods:\n`;
@@ -14,6 +14,8 @@ module.exports = ({ bot, env, manifest }) => {
                 }
                 message += `\n`;
             }
+
+            message += `\nYou can also try '!dcrdbot' to get more information about this bot.\n`;
 
             message += '```';
 

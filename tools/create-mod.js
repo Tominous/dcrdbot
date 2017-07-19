@@ -55,7 +55,8 @@ class Manager {
             main: this.data.main,
             config: this.data.config,
             configSchema: this.data.configSchema,
-            triggers: []
+            triggers: [],
+            dependencies: []
         };
 
         fs.writeFileSync(path.join(this.modsDir, this.data.basicName, 'manifest.json'), JSON.stringify(manifest, null, 2));

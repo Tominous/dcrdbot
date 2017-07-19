@@ -29,6 +29,13 @@
             "type": "string",
             "opional": true
         },
+        "dependencies": {
+            "type": "array",
+            "optional": true,
+            "items": {
+                "type": "string"
+            }
+        },
         "triggers": {
             "type": "array",
             "optional": true,

@@ -7,7 +7,8 @@
 'use strict'
 //
 // Loading configurations
-const { env, manifest } = require('./includes/configs');
+const { env, manifest, tools } = require('./includes/configs');
+
 //
 // Loading dependencies.
 const Discord = require('discord.io');
@@ -35,13 +36,15 @@ if (env.bot && env.bot.token && manifest.mods && Object.keys(manifest.mods).leng
     const piecesParams = {
         bot,
         env,
-        manifest
+        manifest,
+        tools
     };
     //
     // Loading initializers.
     require('./includes/init-bot')(piecesParams);
     require('./includes/init-mods')(piecesParams);
     require('./includes/triggers')(piecesParams);
+    require('./includes/bot-info')(piecesParams);
 } else {
     //
     // Handling error.

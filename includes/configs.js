@@ -10,6 +10,7 @@
 // Objects to later export.
 let env = {};
 let manifest = {};
+let tools = {};
 //
 // Loading dependencies.
 const fs = require('fs');
@@ -25,6 +26,7 @@ class ConfigsManager {
         //
         // Basic values.
         this.rootDir = path.join(__dirname, '..');
+        this.dependencyNames = [];
         //
         // Loading knwon json schemas.
         this.schemas = {};
@@ -39,42 +41,42 @@ class ConfigsManager {
     }
     /**
      * @todo doc
-     *
-     * @param {*} content @todo doc
-     * @param {*} schemaName @todo doc
-     * @return {*} @todo doc
      */
-    valiateKnownSchema(content, schemaName) {
-        let error = `Unknown schema '${schemaName}'`;
-
-        if (this.schemas[schemaName]) {
-            error = this.valiateSchema(content, this.schemas[schemaName]);
+    loadDependencies() {
+        for (let k in this.dependencyNames) {
+            const name = this.dependencyNames[k];
+            tools[name] = require(name);
         }
-
-        return error;
-    }/**
-     * @todo doc
-     *
-     * @param {*} content @todo doc
-     * @param {*} schema @todo doc
-     * @return {*} @todo doc
-     */
-    valiateSchema(content, schema) {
-        let error = false;
-
-        const check = validate(content, schema);
-        if (check.errors.length > 0) {
-            error = check.errors[0].stack;
-        }
-
-        return error;
     }
+    /**
+     * @todo doc
+     */
+    loadEnvironment() {
+        //
+        // Guessing configuration file path.
+        const customConf = path.join(this.rootDir, 'configs', `environment${this.envSuffix}.json`);
+        //
+        // Checking existence.
+        if (fs.existsSync(customConf)) {
+            //
+            // Loading configuration for the current environment.
+            console.log(`Loading configuration from 'environment${this.envSuffix}.json'...`);
+            env = require(customConf);
+            //
+            // Validation its format.
+            const error = this.valiateKnownSchema(env, 'environment');
+            if (error) {
+                console.error(`Environment configuration file 'environment${this.envSuffix}.json' has the wrong structure.\nError: ${error}`);
+                env = {};
+            }
+        }
+    };
     /**
      * @todo doc
      *
      * @return {*} @todo doc
      */
-    buildManifest() {
+    loadFullManifest() {
         //
         // Guessing mods directory.
         const modsDir = path.join(this.rootDir, 'mods');
@@ -149,7 +151,13 @@ class ConfigsManager {
                         }
                     }
                 }
-
+                //
+                // Counting dependencies.
+                if (manifest.dependencies) {
+                    for (let k in manifest.dependencies) {
+                        this.dependencyNames.push(manifest.dependencies[k]);
+                    }
+                }
             }
         }
         //
@@ -162,34 +170,45 @@ class ConfigsManager {
         }
     };
     /**
-     * @todo doc
-     */
-    loadEnvironment() {
-        //
-        // Guessing configuration file path.
-        const customConf = path.join(this.rootDir, 'configs', `environment${this.envSuffix}.json`);
-        //
-        // Checking existence.
-        if (fs.existsSync(customConf)) {
-            //
-            // Loading configuration for the current environment.
-            console.log(`Loading configuration from 'environment${this.envSuffix}.json'...`);
-            env = require(customConf);
-            //
-            // Validation its format.
-            const error = this.valiateKnownSchema(env, 'environment');
-            if (error) {
-                console.error(`Environment configuration file 'environment${this.envSuffix}.json' has the wrong structure.\nError: ${error}`);
-                env = {};
-            }
-        }
-    };
-    /**
      * Main method.
      */
     run() {
         this.loadEnvironment();
-        this.buildManifest();
+        this.loadFullManifest();
+        this.loadDependencies();
+    }
+    /**
+     * @todo doc
+     *
+     * @param {*} content @todo doc
+     * @param {*} schemaName @todo doc
+     * @return {*} @todo doc
+     */
+    valiateKnownSchema(content, schemaName) {
+        let error = `Unknown schema '${schemaName}'`;
+
+        if (this.schemas[schemaName]) {
+            error = this.valiateSchema(content, this.schemas[schemaName]);
+        }
+
+        return error;
+    }
+    /**
+     * @todo doc
+     *
+     * @param {*} content @todo doc
+     * @param {*} schema @todo doc
+     * @return {*} @todo doc
+     */
+    valiateSchema(content, schema) {
+        let error = false;
+
+        const check = validate(content, schema);
+        if (check.errors.length > 0) {
+            error = check.errors[0].stack;
+        }
+
+        return error;
     }
 }
 //
@@ -198,4 +217,4 @@ const manager = new ConfigsManager();
 manager.run();
 //
 // Exporting loaded configurations.
-module.exports = { env, manifest };
+module.exports = { env, manifest, tools };

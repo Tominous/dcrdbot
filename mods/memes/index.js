@@ -1,8 +1,8 @@
 'use strict'
 
-const unirest = require('unirest');
+module.exports = ({ bot, env, pluginConfig, tools }) => {
+    const unirest = tools.unirest;
 
-module.exports = ({ bot, env, pluginConfig }) => {
     let knownMemes = [];
     let mainPattern = false;
     let mainTriggerPattern = false;

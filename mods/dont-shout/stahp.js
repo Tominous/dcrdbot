@@ -1,9 +1,7 @@
 'use strict'
 
-const path = require('path');
-
-module.exports = ({ bot, env, pluginConfig }) => {
-    const path = require('path');
+module.exports = ({ bot, env, pluginConfig, tools }) => {
+    const path = tools.path;
 
     bot.on('message', function (user, userID, channelID, message, event) {
         if (bot.id !== userID && message.match(/^([A-Z0-9 -_:\.\!\?]+)$/)) {

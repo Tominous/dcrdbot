@@ -1,9 +1,9 @@
 'use strict'
 
-const fs = require('fs');
-const path = require('path');
+module.exports = ({ bot, env, pluginConfig, tools }) => {
+    const fs = tools.fs;
+    const path = tools.path;
 
-module.exports = ({ bot, env, pluginConfig }) => {
     const tealcsPath = path.join(__dirname, 'tealcs');
     let indeed = [];
 

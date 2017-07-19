@@ -1,8 +1,9 @@
 'use strict'
 
-const unirest = require('unirest');
 
-module.exports = ({ bot, env, pluginConfig }) => {
+module.exports = ({ bot, env, pluginConfig, tools }) => {
+    const unirest = tools.unirest;
+
     if (pluginConfig.imgurClientId) {
         bot.on('message', function (user, userID, channelID, message, event) {
             if (bot.id !== userID && message.match(/^!imgur/)) {
