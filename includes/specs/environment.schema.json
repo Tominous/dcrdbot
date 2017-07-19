@@ -1,0 +1,26 @@
+{
+    "type": "object",
+    "properties": {
+        "bot": {
+            "type": "object",
+            "properties": {
+                "token": {
+                    "type": "string",
+                    "required": true
+                }
+            }
+        },
+        "ignores": {
+            "type": "object",
+            "properties": {
+                "mods": {
+                    "type": "array",
+                    "required": true,
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}

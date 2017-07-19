@@ -1,0 +1,40 @@
+{
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "required": true
+        },
+        "brief": {
+            "type": "string",
+            "required": true
+        },
+        "description": {
+            "type": "string",
+            "optional": true
+        },
+        "version": {
+            "type": "string",
+            "required": true
+        },
+        "main": {
+            "type": "string",
+            "required": true
+        },
+        "config": {
+            "type": "string",
+            "opional": true
+        },
+        "configSchema": {
+            "type": "string",
+            "opional": true
+        },
+        "triggers": {
+            "type": "array",
+            "optional": true,
+            "items": {
+                "type": "string"
+            }
+        }
+    }
+}
