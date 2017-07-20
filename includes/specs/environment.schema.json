@@ -21,6 +21,19 @@
                     }
                 }
             }
+        },
+        "hidden": {
+            "type": "object",
+            "optional": true,
+            "properties": {
+                "mods": {
+                    "type": "array",
+                    "required": true,
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
         }
     }
 }

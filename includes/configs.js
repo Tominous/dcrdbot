@@ -117,6 +117,7 @@ class ConfigsManager {
                 mods[name].main = manifest.main;
                 mods[name].version = manifest.version;
                 mods[name].triggers = manifest.triggers ? manifest.triggers : false;
+                mods[name].hidden = manifest.hidden ? manifest.hidden : false;
                 //
                 // Configuration and configuration validators.
                 mods[name].config = {};

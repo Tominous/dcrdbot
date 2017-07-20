@@ -42,6 +42,10 @@
             "items": {
                 "type": "string"
             }
+        },
+        "hidden": {
+            "type": "boolean",
+            "opional": true
         }
     }
 }

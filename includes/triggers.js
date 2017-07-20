@@ -8,6 +8,11 @@ module.exports = ({ bot, env, manifest }) => {
             message += `Mods:\n`;
             for (let k in manifest.mods) {
                 let mod = manifest.mods[k];
+
+                if (mod.hidden || env.hidden && env.hidden.mods.indexOf(mod.name) >= 0) {
+                    continue;
+                }
+
                 message += `\t- ${mod.name}: ${mod.brief}\n`;
                 if (mod.triggers && mod.triggers.length > 0) {
                     message += `\t\tTriggers: ${mod.triggers.join(', ')}\n`;

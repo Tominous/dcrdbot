@@ -10,5 +10,8 @@
             "indeed",
             "memes"
         ]
+    },
+    "hidden": {
+        "mods": []
     }
 }

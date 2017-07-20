@@ -18,7 +18,8 @@
     "jsonschema": "^1.1.1",
     "mongoose": "^4.11.3",
     "prompt-sync": "^4.1.5",
-    "unirest": "^0.5.1"
+    "unirest": "^0.5.1",
+    "xml2js": "^0.4.17"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"

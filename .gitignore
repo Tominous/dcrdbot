@@ -58,3 +58,5 @@ typings/
 .env
 
 /configs/*.json
+/.tmp/*
+/mods/*

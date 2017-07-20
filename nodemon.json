@@ -2,6 +2,7 @@
     "ignore": [
         ".git",
         "node_modules/**",
-        "tools/**"
+        "tools/**",
+        ".tmp/**"
     ]
 }
