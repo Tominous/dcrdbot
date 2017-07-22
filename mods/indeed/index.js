@@ -13,6 +13,8 @@ module.exports = ({ bot, env, pluginConfig, tools }) => {
         bot.on('message', function (user, userID, channelID, message, event) {
             if (bot.id !== userID) {
                 if (indeed.length && message.match(/indeed/i)) {
+                    bot.simulateTyping(channelID);
+
                     const pos = Math.round(Math.random() * (indeed.length - 1));
 
                     bot.uploadFile({

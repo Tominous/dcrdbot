@@ -1,6 +1,7 @@
 'use strict'
 
 const path = require('path');
+const chalk = require('chalk');
 
 module.exports = ({ bot, env, manifest, tools }) => {
     const modsPath = path.join(__dirname, 'mods');
@@ -9,7 +10,7 @@ module.exports = ({ bot, env, manifest, tools }) => {
     console.log(`Loading plugins:`);
     for (let k in manifest.mods) {
         let mod = manifest.mods[k];
-        console.log(`  - '${mod.name}'...`);
+        console.log(`  - '${chalk.green(mod.name)}'...`);
         require(path.join(__dirname, '..', 'mods', k, mod.main))({
             bot,
             env,

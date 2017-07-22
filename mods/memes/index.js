@@ -36,6 +36,8 @@ module.exports = ({ bot, env, pluginConfig, tools }) => {
                     }
 
                     if (memeId) {
+                        bot.simulateTyping(channelID);
+
                         unirest
                             .post('https://api.imgflip.com/caption_image')
                             .send({
@@ -61,6 +63,8 @@ module.exports = ({ bot, env, pluginConfig, tools }) => {
                             });
                     }
                 } else {
+                    bot.simulateTyping(channelID);
+
                     bot.sendMessage({
                         to: channelID,
                         message: 'Use it as `' + mainTriggerPatternMatch[1] + ' <top-text>|<bottom-text>`'
@@ -69,6 +73,8 @@ module.exports = ({ bot, env, pluginConfig, tools }) => {
             }
         }
         if (bot.id !== userID && message.match(/^!memes/)) {
+            bot.simulateTyping(channelID);
+
             // https://api.imgflip.com/get_memes
             const triggers = knownMemes.sort((a, b) => a.trigger > b.trigger);
             let message = '```\nKnwon triggers for memes:\n'

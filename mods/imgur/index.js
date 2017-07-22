@@ -7,10 +7,12 @@ module.exports = ({ bot, env, pluginConfig, tools }) => {
     if (pluginConfig.imgurClientId) {
         bot.on('message', function (user, userID, channelID, message, event) {
             if (bot.id !== userID && message.match(/^!imgur/)) {
+                bot.simulateTyping(channelID);
+
                 unirest
                     .get('https://api.imgur.com/3/gallery/hot/viral/0.json')
                     .headers({
-                        'Authorization': 'Client-ID ' + pluginConfig.imgurClientId
+                        'Authorization': `Client-ID ${pluginConfig.imgurClientId}`
                     })
                     .end((response) => {
                         if (typeof response.body.data !== 'undefined' && response.body.data.length > 0) {
@@ -21,13 +23,13 @@ module.exports = ({ bot, env, pluginConfig, tools }) => {
                             const letsTry = () => {
                                 const pos = Math.round(Math.random() * (dataLenght - 1));
                                 img = response.body.data[pos];
-                                if (img.animated || !img.type || !img.type.match(/image/) || img.is_album) {
-                                    img = false;
-                                    if (tries > 0) {
-                                        tries--;
-                                        letsTry();
-                                    }
-                                }
+                                //if (img.animated /*|| !img.type || !img.type.match(/image/) || img.is_album*/) {
+                                //    img = false;
+                                //    if (tries > 0) {
+                                //        tries--;
+                                //        letsTry();
+                                //    }
+                                //}
                             }
                             letsTry();
 
@@ -36,7 +38,7 @@ module.exports = ({ bot, env, pluginConfig, tools }) => {
                                     to: channelID,
                                     message: img.link
                                 });
-                                console.log('Sending imgur link: ' + img.link, img);
+                                console.log('Sending imgur link: ' + img.link);
                             } else {
                                 bot.sendMessage({
                                     to: channelID,

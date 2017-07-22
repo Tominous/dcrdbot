@@ -2,8 +2,13 @@
     "bot": {
         "token": false
     },
+    "db": {
+        "name": "default",
+        "host": "localhost"
+    },
     "ignores": {
         "mods": [
+            "announcements",
             "dayum",
             "dont-shout",
             "imgur",

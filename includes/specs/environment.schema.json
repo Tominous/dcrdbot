@@ -5,13 +5,34 @@
             "type": "object",
             "properties": {
                 "token": {
+                    "type": [
+                        "string",
+                        "boolean"
+                    ],
+                    "required": true
+                }
+            }
+        },
+        "db": {
+            "type": "object",
+            "properties": {
+                "name": {
                     "type": "string",
                     "required": true
+                },
+                "host": {
+                    "type": "string",
+                    "required": true
+                },
+                "port": {
+                    "type": "number",
+                    "optional": true
                 }
             }
         },
         "ignores": {
             "type": "object",
+            "required": true,
             "properties": {
                 "mods": {
                     "type": "array",
@@ -32,6 +53,24 @@
                     "items": {
                         "type": "string"
                     }
+                }
+            }
+        },
+        "socket": {
+            "type": "object",
+            "optional": true,
+            "properties": {
+                "active": {
+                    "type": "boolean",
+                    "required": true
+                },
+                "port": {
+                    "type": "number",
+                    "required": true
+                },
+                "origins": {
+                    "type": "string",
+                    "optional": true
                 }
             }
         }

@@ -1,0 +1,39 @@
+<%- include _top %>
+    <div id="FormWidget" class="col-xs-12 col-md-8">
+        <div class="panel panel-danger">
+            <div class="panel-heading">
+                Make Announcement
+            </div>
+
+            <div class="panel-body">
+                <form id="MessageForm">
+                    <div class="form-group">
+                        <label for="server">Server:</label>
+                        <select class="form-control" id="server" name="server" placeholder="Server">
+                        <option value="">Select a server...</option>
+                        <% for(let k in servers) { %>
+                        <option value="<%=servers[k].id%>"><%=servers[k].name%></option>
+                        <% } %>
+                    </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea class="form-control" id="message" name="message" placeholder="Message"></textarea>
+                    </div>
+                </form>
+            </div>
+
+            <div class="panel-footer text-right">
+                <bottom id="ClearButton" type="button" class="btn btn-link">Clear form</bottom>
+                <bottom id="SubmitButton" type="button" class="btn btn-sm btn-success">Announce</bottom>
+            </div>
+
+        </div>
+
+        <div id="debug"></div>
+    </div>
+
+<%- include _help %>
+
+<%- include _bottom %>

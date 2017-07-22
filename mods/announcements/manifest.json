@@ -1,0 +1,15 @@
+{
+    "name": "announcements",
+    "version": "0.0.1",
+    "brief": "Broadcasts messages to registered channels.",
+    "main": "announcements.js",
+    "config": "config.json",
+    "configSchema": "config.schema.json",
+    "triggers": [],
+    "dependencies": [
+        "chalk",
+        "express",
+        "ejs",
+        "jsonschema"
+    ]
+}

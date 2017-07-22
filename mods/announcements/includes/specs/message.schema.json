@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "properties": {
+        "message": {
+            "type": "string",
+            "required": true
+        },
+        "server": {
+            "type": "string",
+            "required": true
+        },
+        "channel": {
+            "type": "string",
+            "optional": true
+        }
+    }
+}

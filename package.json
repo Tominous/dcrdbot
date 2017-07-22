@@ -6,20 +6,40 @@
   "scripts": {
     "start": "node index.js",
     "start:live": "./node_modules/.bin/nodemon",
+    "create-mod": "node tools/create-mod.js",
     "new-mod": "node tools/create-mod.js",
-    "create-mod": "node tools/create-mod.js"
+    "customize-config": "node tools/customize-config.js",
+    "customize": "node tools/customize-config.js",
+    "install-dependencies": "node tools/install-dependencies.js",
+    "dinstall": "node tools/install-dependencies.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "discord",
+    "discord.io",
+    "bot"
+  ],
+  "author": {
+    "name": "Alejandro Dario Simi",
+    "url": "http://daemonraco.com/"
+  },
+  "url": "https://github.com/daemonraco/dcrdbot",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/daemonraco/dcrdbot.git"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://opensource.org/licenses/MIT"
+  },
   "dependencies": {
+    "chalk": "^2.0.1",
     "delayed-stream": "^1.0.0",
     "discord.io": "^2.5.1",
     "jsonschema": "^1.1.1",
     "mongoose": "^4.11.3",
     "prompt-sync": "^4.1.5",
-    "unirest": "^0.5.1",
-    "xml2js": "^0.4.17"
+    "socket.io": "^2.0.3",
+    "socket.io-client": "^2.0.3"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"

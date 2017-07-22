@@ -7,24 +7,13 @@
 'use strict'
 //
 // Loading configurations
-const { env, manifest, tools } = require('./includes/configs');
-
+const { env, manifest, tools, configInfo } = require('./includes/configs')({});
 //
 // Loading dependencies.
 const Discord = require('discord.io');
-const mongoose = require('mongoose');
 //
 // Checking bot configuration status.
 if (env.bot && env.bot.token && manifest.mods && Object.keys(manifest.mods).length > 0) {
-    //mongoose.Promise = global.Promise;
-    //mongoose.connect(`mongodb://localhost/${dbName}`, {
-    //    useMongoClient: true
-    //});
-    //mongoose.connection.on('error', (err) => {
-    //    console.log(`${err.name}: ${err.message}`);
-    //});
-
-
     //
     // Connection this bot to a Discrod app.
     const bot = new Discord.Client({
@@ -37,7 +26,8 @@ if (env.bot && env.bot.token && manifest.mods && Object.keys(manifest.mods).leng
         bot,
         env,
         manifest,
-        tools
+        tools,
+        configInfo
     };
     //
     // Loading initializers.
