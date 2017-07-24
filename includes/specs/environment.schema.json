@@ -71,6 +71,12 @@
                 "origins": {
                     "type": "string",
                     "optional": true
+                },
+                "defaultMaxListeners": {
+                    "type": [
+                        "number"
+                    ],
+                    "optional": true
                 }
             }
         }

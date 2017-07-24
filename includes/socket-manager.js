@@ -9,6 +9,10 @@ module.exports = ({ env }) => {
     // Checking if there's a socket configuration and it's active.
     if (env.socket && env.socket.active) {
         //
+        // Setting listeners limits.
+        const limit = typeof env.socket.defaultMaxListeners !== 'undefined' ? env.socket.defaultMaxListeners : Infinity;
+        require('events').EventEmitter.defaultMaxListeners = limit;
+        //
         // Creating associated server and socket.
         const server = require('http').createServer();
         socket = require('socket.io')(server, {

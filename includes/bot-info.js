@@ -3,9 +3,6 @@
  * @author Alejandro Dario Simi
  */
 'use strict'
-//
-// Loading dependencies.
-
 
 module.exports = ({ bot, env, manifest }) => {
     let pattern = /^!dcrdbot(| (info|services))$/

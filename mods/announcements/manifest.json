@@ -1,5 +1,5 @@
 {
-    "name": "announcements",
+    "name": "Announcements",
     "version": "0.0.1",
     "brief": "Broadcasts messages to registered channels.",
     "main": "announcements.js",
