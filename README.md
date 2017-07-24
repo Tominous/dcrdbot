@@ -26,7 +26,6 @@ Or you can install a mods from somewhere else or even create your own.
 After you configure all, you just need to run this and it will start:
 >npm start
 
-
 ## Multiple configurations
 Lets say you want to use this system for two different bots with different
 configurations and all.
@@ -51,6 +50,34 @@ itself.
 
 You can also copy it to `configs/imgur.otherbot.json` and it will use that one for
 you second bot.
+
+## Tools
+This bot provides you with a set of tools that may help with tedious tasks
+
+### Install mods dependencies
+If one of your modules requires a `npm` package that is not installed by defualt,
+let's say for example `unirest`, you may run this command to automatically read
+each mod manifest file, load the list of their dependencies and try to install
+them using `npm`:
+>npm run install-dependencies
+
+Or just:
+>npm run dinstall
+
+### Customize configuration
+If the default configuration of one of your mods is not right for your bot and you
+want to customize it, you can run this:
+>npm run customize-config _&lt;mod-directory-name&gt;_
+
+Or jsut:
+>npm run customize _&lt;mod-directory-name&gt;_
+
+This will copy the default configuration file for a mod into `config/` and your
+bot will load it as default for that mod.
+
+Also, if you want you customization work for certain environment, you can run
+this:
+>npm run customize _&lt;mod-directory-name&gt;_ _&lt;environment-suffix&gt;_
 
 ## My on mod
 _So, you want to create your own mod?_ well, run this command:
